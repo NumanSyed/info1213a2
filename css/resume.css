@@ -1,0 +1,293 @@
+/* _________________TAGS_________________ */
+
+body {
+  margin: 5% 10% 5% 10%;
+  padding: 0.1%;
+  text-align: center;
+  font-family: Arial;
+  box-shadow: 1px 1px 5px;
+}
+h1 {
+  font-size: 50px;
+}
+h3 {
+  margin-top: 1px;
+  font-family: Times;
+  color: white;
+  font-size: 30px;
+}
+h5 {
+  text-align: left;
+  color: white;
+}
+p {
+  font-size: 12px;
+}
+ol {
+  list-style-type: upper-roman;
+}
+a {               /*REMOVE UNDERLINE*/
+  text-decoration: none;
+}
+/* _________________HR (LINE)_________________ */
+.lefthr {
+margin-left: 25px;            /*MOVES SKILL TABLE*/
+border: 4px solid #dddce8;
+width: 30%;
+border-top-left-radius: 100%;
+float: left;
+}
+.righthr {
+margin-left: 257px;
+width: 32%;
+border: 4px solid #dddce8;;
+border-top-right-radius: 100%;
+position:absolute;
+}
+.leftside-lefthr {
+margin-left: 34px;
+border: 1.9px solid white;
+background-color: white;
+border-top-left-radius: 100%;
+float: left;
+width: 20%;
+}
+.leftside-righthr {
+margin-left: 66px;
+width: 38%;
+border: 1.9px solid white;
+background-color: white;
+position:absolute;
+border-top-right-radius: 100%;
+}
+/* _________________TOP-BAR_________________ */
+.TopTitle {
+}
+    h1 {
+      color: black;
+      position: absolute;
+      margin-top: 59px;
+      margin-left: 350px;
+    }
+    em{
+      left: 10px;
+      line-height: 265px;
+      color: black;
+    }
+    .TitleColor {
+      background: black;
+      color: white;
+    }
+#FollowMe {
+  margin-top: 40px;
+  position: absolute;
+  height: 200px;
+  width: 50px;
+  margin-left: 1050px;
+}
+.TopContent {
+  height: 220px;
+  background-color: #f2fbff;
+  position:relative;
+}
+
+.topborder {        /*black border with social*/
+  height: 150px;
+}
+.bottomborder {
+  margin-top: 45px;
+  height: 30px;
+  background-color: #4a4a4a;
+}
+/* _________________PROFILE IMG_________________ */
+.ProfileImage {
+  height: 200px;
+  width: 170px;
+  border-radius: 50%;
+  position: absolute;
+  top: 1px;
+  right: 90px;
+}
+/*___*/
+
+/* _________________LEFT BAR_________________ */
+#contact {
+  height: 420px;
+  width:180px;
+  top: 215px;
+  position: absolute;
+  background-color: #494748;
+}
+    .emoji {
+      font-size: 200%;
+    }
+    .incontact {
+      margin-left: 10px;
+      width: 150px;
+      border: 1px solid #494748; /*IF REMOVE BORDER CONTENT SHIFTS*/+
+    }
+/*___*/
+#award {
+  height: 320px;
+  width:180px;
+  top: 550px;
+  position: absolute;
+  background-color: #494748;
+  border-bottom-right-radius:5%;
+  border-bottom-left-radius: 5%;
+
+}
+.award-content {
+  margin: auto 10px auto auto;
+}
+/* _________________Home Button_________________ */
+
+#homebox{
+
+  margin: 0px auto;
+
+}
+.button:hover{
+  background-color: #ddd;
+}
+.button {
+  padding: 0 2%;
+  background-color: #f2fbff;
+}
+/* _________________INSIDE SOCIAL BAR (top)_________________ */
+
+.socialimg {
+  margin-top: 2%;
+  float: left;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+}
+/* _________________LEFTTEXT_________________ */
+.text {
+  font-size: 10px;
+  text-align: center;
+  color: white;
+}
+.texttitle {
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: black;
+  font-size: 12px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px black;
+  text-align: center;
+  color: white;
+}
+/* _________________RIGHT-TEXT/SIDE_________________ */
+.righttext {
+  font-size: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  color: black;
+
+  width: 70%;
+}
+.rightordered {
+  font-size: 15px;
+}
+#rightside {
+
+  width:750px;
+  height:930px;
+  text-align: left;
+  margin: auto auto auto 230px; /*top right down left*/
+  padding: 2%;
+  color: black;
+}
+/* _________________RIGHT-IMG_________________ */
+.logos {
+  background-color: white;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+.L1 {
+  top: 325px;
+  right: 270px;
+}
+.L2 {
+  bottom: 174px;
+  right: 270px;
+}
+.L3 {
+  top: 930px;
+  right: 270px;
+}
+/* _________________SKILLS_________________ */
+
+.endbar { /*can use divs or HR for this but no*/
+  color: grey;
+  background-color: grey;
+  border-bottom-right-radius: 30%;
+  border-top-right-radius: 30%;
+}
+/*--ADDITIONAL DESIGN --*/
+
+/*--Right --*/
+.BottomCircleB {
+  position: absolute;
+  bottom: -280px;
+  right: 170px;
+  height: 70px;
+  width: 70px;
+}
+.BottomCircleB2 {
+  position: absolute;
+  bottom: -215px;
+  right: 150px;
+  height: 50px;
+  width: 50px;
+}
+.BottomCircleB3 {
+  position: absolute;
+  bottom: -160px;
+  right: 150px;
+  height: 30px;
+  width: 30px;
+}
+/*left*/
+.BottomLeftCircleB {
+  position: absolute;
+  bottom: -280px;
+  left: 170px;
+  height: 70px;
+  width: 70px;
+}
+.BottomLeftCircleB2 {
+  position: absolute;
+  bottom: -215px;
+  left: 150px;
+  height: 50px;
+  width: 50px;
+}
+.BottomLeftCircleB3 {
+  position: absolute;
+  bottom: -160px;
+  left: 150px;
+  height: 30px;
+  width: 30px;
+}
+/*--TOP --*/
+.TopCircleT {
+  position: absolute;
+  top: 120px;
+  left: 200px;
+  height: 70px;
+  width: 70px;
+}
+
+.TopCircleT2 {
+  position: absolute;
+  top: 115px;
+  left: 290px;
+  height: 30px;
+  width: 30px;
+}
