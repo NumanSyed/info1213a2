@@ -30,7 +30,7 @@ a {               /*REMOVE UNDERLINE*/
   text-decoration: none;
 }
 /* _________________HR (LINE)_________________ */
-.lefthr {
+.middlehr {
   margin: 0 0 0 24.7%;
 
   border: 3px solid #dddce8;
@@ -39,21 +39,10 @@ a {               /*REMOVE UNDERLINE*/
   border-top-right-radius: 100%;
 }
 
-.leftside-lefthr {
-margin-left: 34px;
-border: 1.9px solid white;
+.miscHr {
+
 background-color: white;
-border-top-left-radius: 100%;
-float: left;
-width: 20%;
-}
-.leftside-righthr {
-margin-left: 66px;
-width: 38%;
-border: 1.9px solid white;
-background-color: white;
-position:absolute;
-border-top-right-radius: 100%;
+
 }
 /* _________________TOP-BAR_________________ */
 .TopTitle {
@@ -144,15 +133,7 @@ border-top-right-radius: 100%;
   padding: 0 2%;
   background-color: #f2fbff;
 }
-/* _________________INSIDE SOCIAL BAR (top)_________________ */
 
-.socialimg {
-  margin-top: 2%;
-  float: left;
-  height: 40px;
-  width: 40px;
-  border-radius: 100%;
-}
 /* _________________LEFTTEXT_________________ */
 .text {
   font-size: 10px;
