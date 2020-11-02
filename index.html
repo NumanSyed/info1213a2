@@ -6,14 +6,12 @@ add navbar + caros   -->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Personal Website</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -23,7 +21,7 @@ add navbar + caros   -->
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top w3-rig">
     <a class="navbar-brand" href="#">
-      <img src="./favicon.ico" class="d-inline-block align-top navimgbar-size">
+      <img src="favicon.ico" class="d-inline-block align-top navimgbar-size">
       JeanLPicard
     </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,28 +38,27 @@ add navbar + caros   -->
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Navigation
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <!-- dropdown-menu-right to position correctly without going outside screen -->
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#About">About Me</a>
           <a class="dropdown-item" href="#middlebox">Portfolio</a>
-          <a class="dropdown-item" href="#contactme"><strong>Contact Me</strong></a>
+          <a class="dropdown-item" href="#Orderbox">Order</a>
+          <a class="dropdown-item" href="#contactme">Contact Me</a>
+          <a class="dropdown-item" href="#Request"><strong>Exclusive Request</strong></a>
         </div>
       </li>
     </ul>
   </div>
 </nav>
-    <div id="Buttons">          <!--TESTING/WORKING-->
-      <a class="button" href="#TopUp" > Home</a>
-      <a class="button" href="#About"> About Me</a>
-      <a class="button" href="#middlebox">Portfolio</a>
-      <a class="button" href="#contactme"><strong> Contact Me</strong></a>
-    </div><br>
+
 
 <!--TOP DIV-->
     <div id="TopUp" class="Top-Left">
         <div class="row">
-            <div id="TopLeft" class="col-xs-6">
+          <!-- no col-sm-6 - no col-md-6 ( col-xs = ontoptop + img bottom = good)-->
+            <div id="TopLeft" class="">    <!--remove col-xs-6-->
             <p class="TopText">Greetings, I am</p>
-            <h1>John Luc- <span class="picard">Picard</span></h1>   <!--H1-->
+            <h1>Jean Luc- <span class="picard">Picard</span></h1>   <!--H1-->
             <em class="TopUpem">I am a specialist in leadership,writing,diplomacy and web designing <br> but most of all, art.</em>
 
                 <div class="to">
@@ -76,8 +73,8 @@ add navbar + caros   -->
 
             </div>
 
-            <div class="PicardoPic col-xs-6">
-            <img class="TopImg container" src="./images/TopPicard.jpg"
+            <div class="PicardoPic"> <!--remove col-xs-6-->
+            <img class="TopImg" src="./images/TopPicard.jpg">
             </div>
         </div>
     </div>
@@ -93,58 +90,170 @@ add navbar + caros   -->
     I spent 12 years writing history books while tending to my vineyard together with Number One(dog).Along the way, I found myself painting after thinking about Data.
    </p>
    <!--ADDITIONAL DESIGN -->
-     
+
   </div>
+  <div class="container">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="4000" data-pause="hover">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+
+      <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block CaroImg" src="./images/Patrick-1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block CaroImg" src="./images/Patrick-2.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block CaroImg" src="./images/Patrick-3.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block CaroImg" src="./images/Patrick-4.jpg" alt="Third slide">
+          </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      </div>
+
+  </div>
+
 </div>
 <!--_____________________________________ -->
 <hr class="hrRounded">
-<div id="middlebox">
+<div id="middlebox" class="">
 <h2>Portfolio</h2>
-  <div class="middlecontent">
+<!-- rows in container  - 2 img side by side + 1 bottom (9 imgs )-->
+<div class="middlecontent container-fluid">
 
-        <img src="./images/img1.png" >
+        <div class="row">
+        <div class="col-12">
+        <img class="middleimg" src="./images/img1.png">
+        <img class="middleimg" src="./images/img2.jpg">
+        <img class="middleimg" src="./images/img3.png">
+        </div>
+        </div>
 
-  </div>
-  <div class="middlecontent">
+        <div class="row">
+        <div class="col-12">
+        <img class="middleimg" src="./images/img4.jpg">   <!--well this works well -->
+        <img class="middleimg" src="./images/img5.jpg">
+        <img class="middleimg" src="./images/img6.jpg">
+        </div>
+        </div>
 
-        <img src="./images/img2.jpg" >
+        <div class="row">
+        <div class="col-12">
+        <img class="middleimg" src="./images/img7.jpg">
+        <img class="middleimg" src="./images/img8.jpg">
+        <img class="middleimg" src="./images/img9.jpg">
+        </div>
+        </div>
 
-  </div>
-  <div class="middlecontent">
+      </div>
+</div>
+</div>
 
-        <img src="./images/img3.png" >
+<hr class="hrRounded">
 
-  </div>
-  <div class="middlecontent">
+<div id="Orderbox">
+<h2>Order A Painting</h2>
 
-        <img src="./images/img4.jpg" >
 
-  </div>
-  <div class="middlecontent">
+      <div class="container-fluid">
+        <div class="row">
 
-        <img src="./images/img5.jpg" >
+          <div class="col-sm-4 "> <!-- remove col-md-4 only sm -->
 
-  </div>
-  <div class="middlecontent">
+            <div class="card">
+              <img class="card-img-top img-fluid cardimg" src="./images/Bronze.jpg">
+              <div class="card-body">
+                <h5 class="card-title">Bronze 🥉</h5>
+                <p class="card-text">Reserved for premium users that has requested over 200 paintings which includes High-quality painting along with a free live car.</p>
+              </div>
+              <ul id="Bronze-Collapse" class="list-group list-group-flush collapse">
+                <li class="list-group-item" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Only Linework and No Color"><input type="checkbox" class="form-check-input filled-in">Linework <span class="Card-Price">$30</span></li>
+                <li class="list-group-item" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="A closeup option"><input type="checkbox" class="form-check-input filled-in">Closeup <span class="Card-Price">$50</span></li>
+                <li class="list-group-item" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Only 720p Available"><input type="checkbox" class="form-check-input filled-in">Resolution 720p <span class="Card-Price">$40</span></li>
+              </ul>
+              <div class="card-body col-12">
 
-        <img src="./images/img6.jpg" >
 
-  </div>
-  <div class="middlecontent">
+                <a class="btn btn-info" data-toggle="collapse" data-target="#Bronze-Collapse">Options</a>
+                <a href="#" class="btn Card-Btn-Color">Order Now</a>    <!--order & align fix with btn when change size remove card-link -->
 
-        <img src="./images/img7.jpg" >
 
-  </div>
-  <div class="middlecontent">
 
-        <img src="./images/img8.jpg" >
+              </div>
+            </div>
 
-  </div>
-  <div class="middlecontent">
+          </div>
 
-        <img src="./images/img9.jpg" >
+          <div class="col-sm-4 ">
 
-  </div>
+            <div class="card ">
+              <img class="card-img-top img-fluid cardimg" src="./images/Silver.jpg">
+              <div class="card-body">
+                <h5 class="card-title">Silver 🥈</h5>
+                <p class="card-text">Reserved for premium users that has requested over 200 paintings which includes High-quality painting along with a free live car.</p>
+              </div>
+              <!--Working-->
+              <ul id="Silver-Collapse" class="list-group list-group-flush collapse">
+                <li class="list-group-item" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Painting of Birds"><input type="checkbox" class="form-check-input filled-in">Free Bird <span class="Card-Price">$0</span></li>
+                <li class="list-group-item" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Full Background"><input type="checkbox" class="form-check-input filled-in">Background <span class="Card-Price">$150</span></li>
+                <li class="list-group-item" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Resolution 1080p Available"><input type="checkbox" class="form-check-input filled-in">Resolution 1080p <span class="Card-Price">$70</span></li>
+                <li class="list-group-item" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Resolution 1440p Available"><input type="checkbox" class="form-check-input filled-in">Resolution 1440p <span class="Card-Price">$140</span></li>
+              </ul>
+
+              <div class="card-body">
+                <a class="btn btn-info" data-toggle="collapse" data-target="#Silver-Collapse">Options</a>
+                <a href="#" class="btn Card-Btn-Color">Order Now</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-sm-4">
+
+            <div class="card">
+              <img class="card-img-top img-fluid cardimg" src="./images/Gold.jpg">
+              <div class="card-body">
+                <h5 class="card-title">Gold 🥇</h5>
+                <p class="card-text">Reserved for premium users that has requested over 200 paintings which includes High-quality painting along with a free live car.</p>
+              </div>
+              <ul id="Gold-Collapse" class="list-group list-group-flush collapse">
+                <li class="list-group-item" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="A Free Real Life Car"><input type="checkbox" class="form-check-input filled-in">Free Car <span class="Card-Price">$0</span></li>
+                <li class="list-group-item" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Every Part Painted"><input type="checkbox" class="form-check-input filled-in">Full Color <span class="Card-Price">$100</span></li>
+                <li class="list-group-item" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="A Full Background"><input type="checkbox" class="form-check-input filled-in">Background <span class="Card-Price">$250</span></li>
+                <li class="list-group-item" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Digital Painting"><input type="checkbox" class="form-check-input filled-in">Digital <span class="Card-Price">$550</span></li>
+                <li class="list-group-item" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Only 4k Resolution Available"><input type="checkbox" class="form-check-input filled-in">High-Resolution (4k+) <span class="Card-Price">$300</span></li>
+                <li class="list-group-item" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="A Real Painting Shipped to You"><input type="checkbox" class="form-check-input filled-in">Real Painting + Shipping <span class="Card-Price">$1000</span></li>
+
+              </ul>
+              <div class="card-body">
+                <a class="btn btn-info " data-toggle="collapse" data-target="#Gold-Collapse">Options</a>
+                <a href="#" class="btn Card-Btn-Color">Order Now</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
 </div>
 
 <hr class="hrRounded">
@@ -161,21 +270,92 @@ add navbar + caros   -->
         <input class="form" type="text" name="firstname" value="" placeholder="Your name.."><br> <!--name or value?-->
         <label>Last Name</label>
         <input class="form" type="text" name="" placeholder="Your last name.."><br>
-        <label>Last Email</label>
+        <label>Email</label>
         <input class="form" type="text" name="" placeholder="Your Email.."><br>
         <label>Subject</label>
         <textarea class="form" name="subject" placeholder="Write something.." style="height:170px"></textarea>
         <input id="submit" type="submit" value="Submit">
     </form>
     </div>
-    <div class="BottomCornerCircles">
-      <!--BOTTOM RIGHT-->
-      <img class="BottomCircleRight" src="./images/redcircle.png">
-      <img class="BottomCircleRight2" src="./images/redcircle.png">
 
-    </div>
   </div>
 </div>
 
-  </body>
+
+<div class="jumbotron jumbotron-fluid" id="Request">
+
+          <h1 class="display-4">Exclusive Request</h1>
+
+          <p class="lead">A random artwork will be sent to you depending on the amount submitted and all the money recieved will go to my very own wildlife preserve</p>
+
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">First & Last Name</span>
+                  </div>
+                  <input type="text" class="form-control"  placeholder="First Name">
+                  <input type="text" class="form-control"  placeholder="Last Name">
+              </div>
+
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">🏠</span>
+                  </div>
+                  <input type="text" class="form-control"  placeholder="Address">
+              </div>
+
+              <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Email">
+                  <div class="input-group-append">
+                    <span class="input-group-text">@gmail.com</span>
+                  </div>
+              </div>
+
+              <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                  </div>
+                  <input type="text" class="form-control"  placeholder="0.00">
+              </div>
+
+          <br>
+
+          <p>Order Now or Donate</p>
+
+          <p class="lead">
+            <!-- role button to change cursor -->
+            <a class="btn1" role="button">Order</a>
+            <a class="btn2" role="button">Donate</a>
+
+          </p>
+
+          <div class="wildlife">
+          <div class="row">
+            <div>
+            <img class="wildimg " src="./images/wildlife-1.jpg" >
+            </div>
+
+            <div>
+            <img class="wildimg " src="./images/wildlife-2.jpg" >
+            </div>
+
+            <div>
+            <img  class="wildimg " src="./images/wildlife-3.jpg" >
+            </div>
+
+          </div>
+          </div>
+
+</div>
+
+  <!-- ----------SCRIPT----------- -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <script>
+  $(document).ready(function(){
+    $('[data-toggle="popover"]').popover();
+  });
+  </script>
+
+</body>
 </html>

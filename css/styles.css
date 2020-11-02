@@ -1,7 +1,7 @@
 /* _________________TAG SELECTOR_________________ */
 
 body {
-  margin: 4%;
+
   background-color: white;
   font-family: Arial;
   text-align: center;
@@ -16,14 +16,14 @@ img {             /*middle affected*/
     height: 240px;
 }
 
-
 /* _________________BootStrap_________________ */
 .row {
-  margin-left: 0;   /*margin-left default is -15 */
+  margin-right: 0px;   /*margin-left default is -15   */
+  margin-left: 0px;
 }
 /* _________________HR (LINE)_________________ */
 .hrRounded {
-    margin: 0 0 0 21%;
+    margin: 0 0 0 24.7%;
     position: absolute;
     border: 3px solid #dddce8;
     border-top-left-radius: 100%;    /*2 because top left and top right radius affects each other- want fade out effect*/
@@ -52,13 +52,13 @@ a.button {
   height: 20%;
 }
 #TopUp {
+  margin-top: 60px;
   background: #f2fbff;
 }
 .TopImg {
 
-  padding: inherit;
   height: 600px;
-  width: 600px;
+  max-width: 600px;  /*perfect img size even shrink screen width*/
 }
 .TopText {
   font-size: 1.8rem;      /*change font px to rem = 16px*/
@@ -126,24 +126,44 @@ a.resumebtn {
 }
 #About {
   margin: auto;
-  width: 50%;
-  padding-bottom: 100px;
+  max-width: 600px; /*Change width 50% to max-wdith 600px*/ 
+
 }
-/* _________________MIDDLE-my work (2nd)_________________ */
+.CaroImg {
+
+  height: 500px;
+
+}
+/* _________________MIDDLE-Portfolio(2nd)_________________ */
 #middlebox {
   margin-top: 10px;
-  height: 770px;
 
 }
 .middlecontent {
   margin: auto;
-  width: 30%;
-  display: inline-block;
-}
 
+
+}
+.middleimg {             /*middle affected*/
+    width:  380px;
+    height: 340px;
+}
+/* _________________Order_________________ */
+#Orderbox {
+  margin-top: 10px;
+}
+.Card-Price {
+  color: red;
+}
+.cardimg {
+  height: 300px;
+}
+.Card-Btn-Color {
+  color: blue;
+}
 /* _________________CONTACT ME_________________ */
 #contactme {
-  margin-top: 10px;
+  margin: 4%;
 }
 .form {
   width: 99%;    /*99% so (text) subject is above text area & DOESNT EXIT OUT OF BODY*/
@@ -162,63 +182,49 @@ a.resumebtn {
   background-color: #afaded;
   border-radius: 10%;
 }
-/*--ADDITIONAL DESIGN --*/
 
-.BottomCircleB {
-  position: absolute;
-  bottom: -180px;       /*MINUS 100*/
-  right: 170px;
-  height: 50px;
-  width: 50px;
+/*--Jumbotron --*/
+.jumbotron {
+  background-image: url("../images/Jumbotron-bg.jpg");
+  color: #fff;
+
 }
-.BottomCircleB2 {
-  position: absolute;
-  bottom: -115px;
-  right: 150px;
-  height: 30px;
-  width: 30px;
+.input-group {
+  width: 50%;
+  margin:auto;
+  margin-top: 5px
 }
-.BottomCircleB3 {
-  position: absolute;
-  bottom: -60px;
-  right: 150px;
-  height: 10px;
-  width: 10px;
+a.btn1 {
+  padding: 8px 14px;
+  border-radius: 5px;
+  background: #fff;
+  color: #353535;
+  margin-right: 10px;
+  text-decoration: none;
 }
-/*left*/
-.BottomLeftCircleB {
-  position: absolute;
-  bottom: -180px;
-  left: 170px;
-  height: 50px;
-  width: 50px;
+a.btn2 {
+  padding: 8px 14px;
+  border-radius: 5px;
+  background: #383838;
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;      /*a.btn for text decoration*/
 }
-.BottomLeftCircleB2 {
-  position: absolute;
-  bottom: -115px;
-  left: 150px;
-  height: 30px;
-  width: 30px;
+a.btn1:hover {
+  background:#d1d1d1;
+
 }
-.BottomLeftCircleB3 {
-  position: absolute;
-  bottom: -60px;
-  left: 150px;
-  height: 10px;
-  width: 10px;
+a.btn2:hover {
+
+  background:#5c5c5c;
 }
-/*__*/
-.BottomCornerCircles {
-   /*__*/
+.wildlife {
+  margin:auto;
+  padding-top: 3%;
+  max-width: 483px;   /*affects margin auto*/
 }
-.BottomCircleRight {
-  position: absolute;
-  margin-right: 1000px;
-  height: 30px;
-  width: 30px;
-}
-.BottomCircleRight2 {
-  margin-left: 1000px;
-  height: 30px;
-  width: 30px;
+.wildimg {
+  margin: 5px;
+  height: 150px;
+  width: 150px;
 }
